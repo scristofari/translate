@@ -83,7 +83,7 @@ func translateHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		// 1 jour
+		// 1 day
 		var expiration = time.Duration(86400) * time.Second
 		nt := &memcache.Item{
 			Key:        arq.key(),
